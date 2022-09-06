@@ -11,17 +11,17 @@ int main() {
     exporeduc = expo - 1;
    
     if(expo == 0){
-        cout << "Therefore the d/dx(" << coef << ") = 0";
+        cout << "Therefore d/dx(" << coef << ") = 0";
     }
     else if(expo == 1){
-        cout << "Therefore the d/dx(" << coef << "x" ") = "  << coef;
+        cout << "Therefore d/dx(" << coef << "x" ") = "  << coef;
     }
     else if(expo <= -1){
         exporeduc = -exporeduc;
-        cout << "Therefore the d/dx(" << coef << "x^" << expo << ") = " << diffrential << "/x^" << exporeduc;
+        cout << "Therefore d/dx(" << coef << "x^" << expo << ") = " << diffrential << "/x^" << exporeduc;
     }
     else{
-         cout << "Therefore the d/dx(" << coef << "x^" << expo << ") = " << diffrential << "x^" << exporeduc;
+         cout << "Therefore d/dx(" << coef << "x^" << expo << ") = " << diffrential << "x^" << exporeduc;
     }
 
     return 0;
